@@ -1,4 +1,5 @@
 body {
+    font-family: 'Courier New', Courier, monospace, sans-serif;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -49,12 +50,18 @@ a:visited {
 }
 
 .bio {
+    font-size: 1.2em;
     width: 30%;
-    margin-left: 5em;
-    transform: translateY(-70%);
+    margin-left: 4em;
+    transform: translateY(-30%);
+    background-color: #090a0b;
+    color: white;
+    border-radius: 5px;
+    padding: 1em;
 }
 
 section {
+    font-family: sans-serif;
     min-height: 15em;
     max-height: 20em;
     height: 50vh;
@@ -81,4 +88,17 @@ section>h2 {
 
 section:nth-of-type(3) {
     height: 20vh;
+}
+
+ol,
+ul {
+    flex-grow: 1;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+}
+
+section:nth-of-type(2)>div {
+    min-height: 3em;
 }
