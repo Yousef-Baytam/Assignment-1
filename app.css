@@ -7,12 +7,19 @@ body {
 img {
     border-radius: 50%;
     border: 5px solid black;
+    display: inline;
+    position: static;
+    transform: translate(10%, -5%);
 }
 
 h1 {
+    display: flex;
+    justify-content: end;
+    position: inline;
     width: 50%;
     margin: auto;
-    font-size: 3em;
+    transform: translateY(3em);
+    font-size: 4em;
 }
 
 a,
