@@ -16,7 +16,7 @@ h1 {
     display: flex;
     justify-content: end;
     position: inline;
-    width: 50%;
+    width: 80%;
     margin: auto;
     transform: translateY(3em);
     font-size: 4em;
@@ -29,4 +29,15 @@ a,
 
 a:visited {
     color: black;
+}
+
+.address {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: end;
+    margin: auto;
+    font-size: 2em;
+    transform: translate(0, -2em);
 }
