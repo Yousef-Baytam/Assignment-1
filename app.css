@@ -2,6 +2,12 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    background-color: #9aa3a6;
+}
+
+.header {
+    background-color: rgb(47, 57, 77);
+    background-image: linear-gradient(to top, #9aa3a6, rgba(47, 57, 77));
 }
 
 img {
@@ -49,13 +55,30 @@ a:visited {
 }
 
 section {
+    min-height: 15em;
+    max-height: 20em;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     width: 90%;
-    padding: 10px;
+    padding: 2em;
     margin: 1em auto;
     border-radius: 5px;
-    background-color: rgba(47, 57, 77, 0.3);
+    background-color: #22292b;
+    color: white;
+}
+
+span.to-right {
+    float: right;
 }
 
 section>h2 {
-    border-bottom: 1px solid black;
+    padding-bottom: 1em;
+    margin-top: 0;
+    border-bottom: 3px solid black;
+}
+
+section:nth-of-type(3) {
+    height: 20vh;
 }
