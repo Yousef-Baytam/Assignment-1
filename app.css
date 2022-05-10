@@ -14,9 +14,10 @@ body {
 img {
     border-radius: 50%;
     border: 5px solid black;
-    display: inline;
-    position: static;
+    display: block;
+    position: relative;
     transform: translate(30%, 0%);
+    transition: all 200ms linear;
 }
 
 h1 {
@@ -32,6 +33,7 @@ h1 {
 a,
 .phone {
     text-decoration: none;
+    transition: all 200ms linear;
 }
 
 a:visited {
@@ -101,4 +103,14 @@ ul {
 
 section:nth-of-type(2)>div {
     min-height: 3em;
+}
+
+a:hover,
+.phone:hover {
+    transform-origin: center;
+    transform: scale(1.1)
+}
+
+img:hover {
+    transform: scale(1.1) translate(30%, 0%);
 }
